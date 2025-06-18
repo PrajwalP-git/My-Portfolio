@@ -1,0 +1,43 @@
+body{
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0d1117;
+  color: #e0e0e0;
+}
+
+.App{
+  text-align: center;
+}
+
+.navbar{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 1rem 0;
+  display: flex;
+  justify-content:center;
+  background: transparent;
+  z-index: 10;
+}
+
+.navbar ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar a{
+  text-decoration: none;
+  color: #2cb67d;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.navbar a:hover{
+  color: #fff;
+}
+

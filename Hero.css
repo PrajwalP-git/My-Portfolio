@@ -1,0 +1,57 @@
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-image: url('../images/animation.avif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  color: #E0E0E0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); /* dark overlay for contrast */
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.name {
+  color: #2cb67d;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  color: #c5c5c5;
+}
+
+.hero-btn {
+  margin-top: 2.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  border: 2px solid #2cb67d;
+  color: #2cb67d;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.hero-btn:hover {
+  background-color: #2cb67d;
+  color: #0D1117;
+  box-shadow: 0 0 10px #2cb67d;
+}

@@ -1,0 +1,36 @@
+.skills{
+    padding:4rem 2rem;
+    background-color: #0f0f0f;
+    color: #e0e0e0;
+    text-align: center;
+}
+
+.skills h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #b2ff59; /* Alien green */
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.skill {
+  background-color: #1a1a1a;
+  padding: 1rem;
+  border-radius: 10px;
+  font-weight: bold;
+  color: #cfd8dc;
+  border: 1px solid #333;
+  transition: 0.3s ease;
+}
+
+.skill:hover {
+  background-color: #292929;
+  color: #b2ff59;
+  transform: scale(1.05);
+}
